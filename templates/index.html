@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>HOME | APGENIX</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+    }
+
+    button {
+        background-color: aqua;
+    }
+
+    button a {
+        color: black;
+    }
+
+    nav {
+        background-color: aquamarine;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0px;
+        list-style: none;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        margin: 20px;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        /* background: white; */
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        border-radius: 100px;
+        border-bottom: purple;
+        background-color: rgba(241, 241, 241, 0.685);
+        color: red;
+        transition: 400ms;
+    }
+    .container,p{
+        
+        margin-top: 30px;
+    }
+    section{
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    b{
+        color: greenyellow;
+    }
+    footer ul {
+        margin-top: 70vh;
+        position: relative;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background-color: #fff000;
+        gap: 2rem;
+    }
+    footer ul li img{
+        background-color: white;
+        width: 40px;
+        
+    }
+    section b{
+        text-transform: uppercase;
+    }
+    footer ul li img:hover{
+        box-shadow: 0 0 20px 0 rgb(0,0,0,0.3);
+        /* color: var(--clr); */
+        /* filter: drop-shadow(0 0 5px var(--clr)); */
+    }
+
+    footer ul li img:nth-child(1){
+        --clr:cyan;
+    }
+    footer ul li img:nth-child(2){
+        --clr:cyan;
+    }
+    footer ul li img:nth-child(3){
+        --clr:cyan;
+    }
+    
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a title="Log-out" href="/logout/"><img src="/static/2.svg" alt=""></a></li>
+        </ul>
+    </nav>
+    <div class="container"></div>
+    <!-- <h1 align="center">ap</h1> -->
+    
+    <section align="center">Welcome, <b>{{user.first_name}}</b><b>{{user.last_name}}</b></section>
+    <p align="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae porro assumenda magni,
+        eum repellendus iste nihil temporibus voluptatum architecto modi unde ullam odio voluptatem ex molestiae illum
+        exercitationem harum!</p>
+    <!-- <button><a href="/logout/">Logout</a></button> -->
+    </div>
+    <footer>
+        <ul>
+            <!-- <li><a href="apgenix.blogspot.com"><img src="/static/2.svg" alt=""></a></li>
+            <li><a href=""><img src="/static/2.svg" alt=""></a></li>
+            <li><a href=""><img src="/static/2.svg" alt=""></a></li> -->
+        </ul>
+    </footer>
+</body>
+
+</html>
